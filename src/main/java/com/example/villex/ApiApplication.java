@@ -1,4 +1,4 @@
-package com.example.baozi;
+package com.example.villex;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

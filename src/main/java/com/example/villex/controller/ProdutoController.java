@@ -1,30 +1,30 @@
-package com.example.baozi.controller;
+package com.example.villex.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import com.example.baozi.model.Pedido;
-import com.example.baozi.repository.PedidoRepository;
+import com.example.villex.model.Produto;
+import com.example.villex.repository.ProdutoRepository;
 import java.util.List;
 
 @RestController
-@RequestMapping("/pedidos")
-public class PedidoController {
+@RequestMapping("/produtos")
+public class ProdutoController {
 
     @Autowired
-    private PedidoRepository repository;
+    private ProdutoRepository repository;
 
     @PostMapping
-    public Pedido criar(@RequestBody Pedido pedido) {
-        return repository.save(pedido);
+    public Produto criar(@RequestBody Produto produto) {
+        return repository.save(produto);
     }
 
     @GetMapping
-    public List<Pedido> listar() {
+    public List<Produto> listar() {
         return repository.findAll();
     }
 
     @GetMapping("/{id}")
-    public Pedido buscar(@PathVariable Long id) {
+    public Produto buscar(@PathVariable Long id) {
         return repository.findById(id).orElse(null);
     }
 

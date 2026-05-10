@@ -1,4 +1,4 @@
-package com.example.baozi.model;
+package com.example.villex.model;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
