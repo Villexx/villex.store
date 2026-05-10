@@ -13,6 +13,11 @@ Projeto acadêmico construído como requisito de avaliação da atividade práti
 * H2 Database (Banco de dados em memória)
 * Postman (Testes e validação de rotas)
 
+## Arquitetura e Estrutura
+* **Padrão:** MVC (Model-View-Controller) do Spring.
+* **Formatos:** Respostas e requisições trafegando em JSON.
+* **Pacotes:** Projeto estruturado estritamente em `model`, `repository` e `controller`.
+
 ## Endpoints Implementados (CRUD)
 A API responde na porta `8080` (`http://localhost:8080`) para as seguintes rotas:
 
